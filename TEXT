@@ -1,0 +1,4 @@
+php yii migrate/create add_position_column_to_orders_table --fields=buyer_id:int:notNull,date:date:notNull,sum:text:notNull,coment:text
+php yii migrate/create create_tovar_table
+php yii migrate/create add_position_column_to_tovar_table --fields=name:text:notNull
+
