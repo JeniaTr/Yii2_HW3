@@ -3,16 +3,16 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `buyer`.
+ * Handles the creation of table `tovar_order`.
  */
-class m161204_185017_create_buyer_table extends Migration
+class m161204_191122_create_tovar_order_table extends Migration
 {
     /**
      * @inheritdoc
      */
     public function up()
     {
-        $this->createTable('buyer', [
+        $this->createTable('tovar_order', [
             'id' => $this->primaryKey(),
         ]);
     }
@@ -22,7 +22,6 @@ class m161204_185017_create_buyer_table extends Migration
      */
     public function down()
     {
-        $this->dropTable('buyer');
+        $this->dropTable('tovar_order');
     }
-
 }

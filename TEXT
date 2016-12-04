@@ -1,4 +1,8 @@
 php yii migrate/create add_position_column_to_orders_table --fields=buyer_id:int:notNull,date:date:notNull,sum:text:notNull,coment:text
 php yii migrate/create create_tovar_table
 php yii migrate/create add_position_column_to_tovar_table --fields=name:text:notNull
+php yii migrate/create add_position_column_to_buyer_table --fields=fio:text:notNull,adress:text,telefon:integer
+php yii migrate/create add_position_column_to_tovar_order_table --fields="order_id:integer:notNull:foreignKey(orders),tovar_id:integer:notNull:foreignKey(tovar)"
+
+
 
